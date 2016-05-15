@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>temp</title>
+<style>
+
+
+.box {
+  width: 500px;
+  height: 500px;
+  background-color: #000;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="box"></div>
+
+
+<!-- Scripts Start -->
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript" src="./Responsive.js"></script>
+<script type="text/javascript">
+
+var $box =$('.box');
+
+var prop = ['width','height'],
+
+    win = {
+        def: $(window).width(),
+        min: 600,
+        max: 1000,
+      };
+
+gb.Responsive($box,prop,win);
+
+
+</script>
+</body>
+</html>
